@@ -3,6 +3,9 @@
 A **machine learning-based web application** built with **Flask** to classify news articles as **Real** or **Fake**.
 
 
+---
+
+
 ## 🔍 About
 
 Fake News Detection uses AI and machine learning to automatically detect whether a given news article is authentic or fake.  
