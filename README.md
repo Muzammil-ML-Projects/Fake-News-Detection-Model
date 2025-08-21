@@ -1,24 +1,25 @@
-# 📧 EmailClassifier
+# 📰 Fake News Detection Model
 
-A **machine learning-based email classifier** built with **Flask** to categorize emails as **spam** or **non-spam**.
+A **machine learning-based web application** built with **Flask** to classify news articles as **Real** or **Fake**.
 
-
+---
 
 ## 🔍 About
 
-EmailClassifier is a web application that uses machine learning to automatically classify emails as spam or legitimate.  
-It demonstrates how to train an ML model and deploy it using Flask, allowing users to input emails and get instant classification results. 🚀
+Fake News Detection uses AI and machine learning to automatically detect whether a given news article is authentic or fake.  
+It demonstrates training a machine learning model and deploying it via Flask, allowing users to input news text and get instant predictions. 🚀
 
-
+---
 
 ## ✨ Features
 
-- 📨 Classifies emails as **Spam** or **Not Spam**  
+- 📰 Classifies news as **Real** or **Fake**  
 - 🖥️ User-friendly web interface built with Flask  
 - 🤖 Machine Learning model trained with scikit-learn  
 - ⚡ Fast and responsive predictions  
+- ⏱️ 0.5-second delay feature to simulate real-time detection  
 
-
+---
 
 ## 🛠️ Technologies
 
@@ -28,18 +29,18 @@ It demonstrates how to train an ML model and deploy it using Flask, allowing use
 - 🗄️ pandas, numpy  
 - 🎨 HTML/CSS for frontend  
 
-
+---
 
 ## 🖼️ Screenshot / Demo
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.png)  
 
-
+---
 
 ## 📄 License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
-
+---
 
 **Made with ❤️ by [M Muzammil Irshad]**
