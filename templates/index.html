@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fake News Detection</title>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'style.css')}}"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <h1>Verify the truth with AI-powered detection</h1>
-        <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+      <h1>Verify the truth with AI-powered detection</h1>
     </header>
-<!-- Main -->
- <main>
-    <div id="formContainer">
-    <!-- form -->
-     <form action="/predict" method="post">
-        <textarea required name="news" id="text" placeholder="Type or paste news text and detect if it's Real or Fake.."></textarea>
-        <div id="butRes">
-        <button type="submit">Truth or Fake</button>
-          {% if prediction %}
-<p id="result"></p>
-    {% endif %}
-    </div>
-     </form>
-     </div>
- </main>
- <!-- footer -->
-  <footer>
-<p>Made with ❤ by M. Muzammil Irshad</p>
-  </footer>
+    <!-- Main -->
+    <main>
+      <div id="formContainer">
+        <!-- form -->
+        <form action="/predict" method="post">
+          <textarea
+            required
+            name="news"
+            id="text"
+            placeholder="Type or paste news text and detect if it's Real or Fake.."
+          ></textarea>
+          <div id="butRes">
+            <button type="submit">Truth or Fake</button>
+            {% if prediction %}
+            <p id="result"></p>
+            {% endif %}
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>Made with ❤ by M. Muzammil Irshad</p>
+    </footer>
 
-  <!-- half second delay -->
-  <script>
-        const prediction = "{{ prediction|default('') }}";
-        const text = document.getElementById("text");
-        const resultElement = document.getElementById("result");
-      if(prediction) {
-            resultElement.innerText = "Detecting result, please wait...";
-            setTimeout(() => {
-                resultElement.innerText = "Result: " + prediction;
-
-            }, 500);
-        }
-
+    <!-- half second delay -->
+    <script>
+      const prediction = "{{ prediction|default('') }}";
+      const text = document.getElementById("text");
+      const resultElement = document.getElementById("result");
+      if (prediction) {
+        resultElement.innerText = "Detecting result, please wait...";
+        setTimeout(() => {
+          resultElement.innerText = "Result: " + prediction;
+        }, 500);
+      }
     </script>
-</body>
+  </body>
 </html>
