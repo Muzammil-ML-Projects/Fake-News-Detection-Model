@@ -17,15 +17,18 @@
     <!-- form -->
      <form action="/predict" method="post">
         <textarea required name="news" id="text" placeholder="Type or paste news text and detect if it's Real or Fake.."></textarea>
+        <div id="butRes">
         <button type="submit">Truth or Fake</button>
+          {% if prediction %}
+<p id="result"></p>
+    {% endif %}
+    </div>
      </form>
      </div>
  </main>
  <!-- footer -->
   <footer>
-  {% if prediction %}
-<p id="result"></p>
-    {% endif %}
+<p>Made with ❤ by M. Muzammil Irshad</p>
   </footer>
 
   <!-- half second delay -->

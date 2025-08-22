@@ -20,7 +20,7 @@ body{
 header h1{
     text-align: center;
     margin-top: 3rem;
-    padding: 1rem 0.2rem;
+    padding: 1rem 0.5rem;
 }
 
 /* form */
@@ -30,7 +30,7 @@ header h1{
 }
 form{
     width: 80%;
-    height: 50rem;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,6 +45,11 @@ form{
     font-family: "Roboto", sans-serif;
     border-radius: 0.5rem;
     resize: none;
+}
+#butRes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 button{
     width: 15rem;
@@ -64,7 +69,6 @@ button:active{
 }
 /* footer */
 footer{
-    position: absolute;
-    right: 13.5rem;
-    bottom: 12rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
