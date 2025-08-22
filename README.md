@@ -33,6 +33,12 @@ It demonstrates training a machine learning model and deploying it via Flask, al
 
 ---
 
+## 💾 Dataset
+
+https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
+
+---
+
 ## 🖼️ Screenshot / Demo
 
 ![Screenshot](screenshot.png)  
